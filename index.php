@@ -26,7 +26,7 @@ if (isset($_POST['submitted'])) {
 <!-- Begin Body -->
 <body>
 <h1>Envato Marketplace Purchase Verifier</h1>
-<h4>Make sure that you have configured the script in config.php</h4>
+<h4>Make sure that you have configured the script in config.php. Data will appear below if configured correctly.</h4>
 
 <form action="#" method="post">
     <label for="purchase-code">Purchase Code</label>
