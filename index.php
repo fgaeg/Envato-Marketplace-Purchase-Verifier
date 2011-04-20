@@ -46,7 +46,7 @@ if (isset($v->buyer)) {
     echo '<span style="color:red;font-weight:bold;font-size:16px;">Not a Valid Purchase</span>';
 }
 ?>
-<h3>Other Data</h3>
+<h3>Purchase Data</h3>
 <?php if ($v==null) { echo 'No other data'; } else { ?>
 <p><strong>Item Name:</strong> <?php echo $v->item_name; ?>
 <br/><strong>Item ID:</strong> <?php echo $v->item_id; ?>
