@@ -1,9 +1,9 @@
 <?php
+require 'Envato_marketplaces.php';
+require 'config.php';
+$e = new Envato_marketplaces();
+$e->set_api_key($config['api_key']);
 if (isset($_POST['submitted'])) {
-    require 'Envato_marketplaces.php';
-    require 'config.php';
-    $e = new Envato_marketplaces();
-    $e->set_api_key($config['api_key']);
     $v = $e->verify_purchase($config['username'],$_POST['purchase-code']);
 }
 ?>
