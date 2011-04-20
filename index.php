@@ -52,6 +52,7 @@ if (isset($v->buyer)) {
 <br/><strong>Item ID:</strong> <?php echo $v->item_id; ?>
 <br/><strong>Licence:</strong> <?php echo $v->licence; ?>
 <br/><strong>Buyer:</strong> <?php echo $v->buyer; ?>
+<br/><strong>Purchase Code:</strong> <?php echo $_POST['purchase-code']; ?>
 <br/><strong>Purchase Time & Date:</strong> <?php echo $v->created_at; ?></p>
 <?php } ?>
 <?php endif; ?>
