@@ -56,8 +56,8 @@ if ($v==null) { echo 'No other data'; } else { print_r($v); }
 <hr/>
 
 <h3>Your Data</h3>
-<p>Username: <?php echo $config['username']; ?>
-<br/>API Key: <?php echo $config['api_key']; ?></p>
+<p><strong>Username:</strong> <?php echo $config['username']; ?>
+<br/><strong>API Key:</strong> <?php echo $config['api_key']; ?></p>
 <hr/>
 
 <h5>Script by Priyesh Patel. Wrapper class by Jeffrey Way. Source code on GitHub @ <a href="https://github.com/PriyeshPatel/Envato-Marketplace-Purchase-Verifier">https://github.com/PriyeshPatel/Envato-Marketplace-Purchase-Verifier</a></h5>
