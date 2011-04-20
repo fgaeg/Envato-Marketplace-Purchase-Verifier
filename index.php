@@ -41,17 +41,19 @@ if (isset($_POST['submitted'])) {
 <h2>Results</h2>
 <?php
 if (isset($v->buyer)) {
-    echo 'Valid Purchase';
+    echo '<span style="color:green;font-weight:bold;font-size:16px;">Valid Purchase</span>';
 } else {
-    echo 'Not a Valid Purchase';
+    echo '<span style="color:red;font-weight:bold;font-size:16px;">Not a Valid Purchase</span>';
 }
 ?>
 <h3>Other Data</h3>
-<pre>
-<?php 
-if ($v==null) { echo 'No other data'; } else { print_r($v); }
-?>
-</pre>
+<?php if ($v==null) { echo 'No other data'; } else { ?>
+<p><strong>Item Name:</strong> <?php echo $v->item_name; ?>
+<br/><strong>Item ID:</strong> <?php echo $v->item_id; ?>
+<br/><strong>Licence:</strong> <?php echo $v->licence; ?>
+<br/><strong>Buyer:</strong> <?php echo $v->buyer; ?>
+<br/><strong>Purchase Time & Date:</strong> <?php echo $v->created_at; ?></p>
+<?php } ?>
 <?php endif; ?>
 <hr/>
 
